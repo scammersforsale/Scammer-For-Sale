@@ -1,4 +1,124 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+    /* --- Modern UI Redesign --- */
+    :root {
+        --header-height: 4rem;
+        --title-color: #22223b;
+        --text-color: #4a4e69;
+        --body-color: #f8f9fa;
+        --con-color: #fff;
+        --primary-color: #5f6caf;
+        --primary-color-alt: #3a3f58;
+        --accent-color: #f28482;
+        --shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+        --font: 'Poppins', 'Segoe UI', Arial, sans-serif;
+        --big-font: 3rem;
+        --h1-font: 2.2rem;
+        --h2-font: 1.5rem;
+        --h3-font: 1.2rem;
+        --normal-font: 1rem;
+        --small-font: 0.95rem;
+        --smallest-font: 0.8rem;
+        --font-med: 500;
+        --font-bold: 700;
+    }
+    
+    body {
+        background: linear-gradient(135deg, rgba(40,44,52,0.95) 0%, rgba(60,65,90,0.85) 50%, rgba(24,26,32,0.95) 100%),
+                url('../imgs/town-b1.webp') center center/cover no-repeat fixed;
+        color: var(--text-color);
+        font-family: var(--font);
+        font-size: var(--normal-font);
+        line-height: 1.7;
+        min-height: 100vh;
+    }
+    
+    header {
+        background: var(--primary-color);
+        box-shadow: var(--shadow);
+    }
+    
+    header .nav-logo {
+        color: var(--con-color);
+        font-weight: var(--font-bold);
+        font-size: var(--h2-font);
+    }
+    
+    header .nav-items .item .nav-link {
+        color: var(--con-color);
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        transition: background 0.2s;
+    }
+    
+    header .nav-items .item .nav-link:hover {
+        background: var(--accent-color);
+        color: #fff;
+    }
+    
+    .button {
+        background: var(--primary-color);
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.6rem 1.5rem;
+        font-weight: var(--font-bold);
+        transition: background 0.2s;
+    }
+    
+    .button:hover {
+        background: var(--accent-color);
+    }
+    
+    .section {
+        padding: 5rem 0 2rem;
+    }
+    
+    .section-title {
+        color: var(--primary-color-alt);
+        font-size: var(--h1-font);
+        margin-bottom: 2rem;
+        font-weight: var(--font-bold);
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    
+    .card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    img {
+        border-radius: 8px;
+    }
+    
+    @media (max-width: 768px) {
+        .section {
+            padding: 3rem 0 1rem;
+        }
+        .container {
+            padding: 0 0.5rem;
+        }
+        .section-title {
+            font-size: var(--h2-font);
+        }
+    }
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+        background: var(--body-color);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+        border-radius: 8px;
+    }
+    /* --- End Modern UI Redesign --- */
     /* Start Variables */
     
      :root {
@@ -1957,3 +2077,168 @@
     .show-scroll {
         bottom: 2rem;
     }
+    /* --- Dark Mode Theme --- */
+    :root {
+        --header-height: 4rem;
+        --title-color: #f8f8ff;
+        --text-color: #bfc1c8;
+        --body-color: #181a20;
+        --con-color: #23263a;
+        --primary-color: #23263a;
+        --primary-color-alt: #1a1c23;
+        --accent-color: #5f6caf;
+        --shadow: 0 2px 8px rgba(0,0,0,0.5);
+        --font: 'Poppins', 'Segoe UI', Arial, sans-serif;
+        --big-font: 3rem;
+        --h1-font: 2.2rem;
+        --h2-font: 1.5rem;
+        --h3-font: 1.2rem;
+        --normal-font: 1rem;
+        --small-font: 0.95rem;
+        --smallest-font: 0.8rem;
+        --font-med: 500;
+        --font-bold: 700;
+    }
+    
+    body {
+        background: var(--body-color);
+        color: var(--text-color);
+    }
+    
+    header {
+        background: var(--primary-color);
+        box-shadow: var(--shadow);
+    }
+    
+    header .nav-logo {
+        color: var(--title-color);
+    }
+    
+    header .nav-items .item .nav-link {
+        color: var(--title-color);
+    }
+    
+    header .nav-items .item .nav-link:hover {
+        background: var(--accent-color);
+        color: #fff;
+    }
+    
+    .button {
+        background: var(--accent-color);
+        color: #fff;
+    }
+    
+    .button:hover {
+        background: var(--primary-color-alt);
+    }
+    
+    .section {
+        background: var(--con-color);
+        color: var(--text-color);
+    }
+    
+    .section-title {
+        color: var(--title-color);
+    }
+    
+    .container {
+        background: transparent;
+    }
+    
+    .card, .cart, .login, .newsletter, .footer, .steps-box, .discount, .new-content {
+        background: var(--primary-color-alt);
+        color: var(--text-color);
+        box-shadow: var(--shadow);
+    }
+    
+    img {
+        border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+        background: var(--body-color);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+        border-radius: 8px;
+    }
+    
+    .footer {
+        background: var(--primary-color);
+        color: var(--text-color);
+    }
+    
+    .footer-link, .footer-title, .footer-copy {
+        color: var(--text-color);
+    }
+    
+    .scroll-up {
+        background: var(--accent-color);
+        color: #fff;
+    }
+    
+    /* --- End Dark Mode Theme --- */
+    /* --- Glassmorphism/Glassy Translucent UI --- */
+    .section, .card, .cart, .login, .newsletter, .footer, .steps-box, .discount, .new-content, .shop-content, .sidebar, .contact-content, .about-container, .product-img, .details-container, .lightbox-content, .style-switcher {
+        background: rgba(35, 38, 58, 0.55) !important;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18) !important;
+        backdrop-filter: blur(16px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+        border-radius: 16px !important;
+        border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    }
+    
+    header, .footer, .nav-menu, .cart, .login, .style-switcher {
+        background: rgba(35, 38, 58, 0.75) !important;
+        backdrop-filter: blur(12px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+        border-radius: 16px !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+    
+    .container {
+        background: transparent !important;
+    }
+    
+    /* Enhance buttons for glassy look */
+    .button, .button.new-button, .button.shop-button {
+        background: rgba(95, 108, 175, 0.65) !important;
+        color: #fff !important;
+        box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.12) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        border: 1px solid rgba(255,255,255,0.18) !important;
+    }
+    .button:hover, .button.new-button:hover, .button.shop-button:hover {
+        background: rgba(95, 108, 175, 0.85) !important;
+    }
+    
+    /* Glassy input fields */
+    input, textarea, select {
+        background: rgba(35, 38, 58, 0.45) !important;
+        color: #fff !important;
+        border: 1px solid rgba(255,255,255,0.18) !important;
+        border-radius: 8px !important;
+        backdrop-filter: blur(6px) !important;
+        -webkit-backdrop-filter: blur(6px) !important;
+    }
+    
+    /* Glassy nav menu for mobile */
+    @media (max-width: 767px) {
+        header .nav-items, .nav-menu {
+            background: rgba(35, 38, 58, 0.85) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            border-radius: 16px !important;
+        }
+    }
+    
+    /* Glassy lightbox overlay */
+    .lightbox {
+        background: rgba(24, 26, 32, 0.65) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+    }
+    
+    /* End Glassmorphism */
